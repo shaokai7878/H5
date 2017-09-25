@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<title>家庭会员主页</title>
+	<style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	.header{
+		height: 1.19rem;
+		border-top: 1px solid #dedede;
+		border-bottom: 1px solid #434343;
+	}
+	.tu10{
+		float: left;
+		width: 2.35rem;
+		height: 1.19rem;
+		margin-left: 0.35rem;
+	}
+	.dingzhi{
+		background-color: #e8420a;
+		width: 1.66rem;
+		height: 0.57rem;
+		color: #fff;
+		text-align: center;
+		font-size: 0.28rem;
+		line-height: 0.57rem;
+		float: left;
+		margin-left: 1.8rem;
+		margin-top: 0.35rem;
+	}
+	.menu{
+		width: 0.5rem;
+		height: 0.5rem;
+		display: inline-block;
+		background:url(footerImg/footer2_03.png) no-repeat;
+		background-size: 100% 100%;
+		float: right;
+		margin: 0.42rem 0.35rem 0.42rem 0.35rem;
+	}
+	.nav{
+		height: 1.0rem;
+		margin: 0;
+	}
+	.chujing{
+		padding-left: 0.14rem;
+		width: 1.22rem;
+		height: 0.30rem;
+		border-left: 0.05rem solid #e8420a;
+		margin-top: 0.46rem;
+		margin-left: 0.38rem;
+		font-size: 0.3rem;
+		color: #000;
+		line-height: 0.3rem;
+	}
+	.container{
+		width: 6.68rem;
+		margin:  0 auto;
+	}
+	.list{
+		width: 6.68rem;
+		height: 0.84rem;
+		border:0.01rem solid #f5f5f5; 
+	}
+	.list h3{
+		background-color: #f5f5f5;
+		width: 1.05rem;
+		font-size: 0.24rem;
+		height: 0.84rem;
+		text-align: center;
+		line-height: 0.84rem;
+		font-family: 微软雅黑;
+		color: #010101;
+		float: left;
+	}
+	.list li{
+		width: 1.05rem;
+		font-size: 0.24rem;
+		height: 0.84rem;
+		text-align: center;
+		line-height: 0.84rem;
+		font-family: 微软雅黑;
+		color: #010101;
+		float: left;
+	}
+	.middle{
+		width: 6.68rem;
+		height: 2.35rem;
+		border:0.01rem solid #f5f5f5; 
+	}
+	.middle li{
+		margin-left:0.3rem;
+		margin-top: 0.37rem; 
+		color: #747474;
+		font-size: 0.24rem;
+		text-align: center;
+		font-family: 微软雅黑;
+		float: left;
+	}
+	.list1{
+		width: 6.68rem;
+		height: 0.84rem;
+		border:0.01rem solid #f5f5f5; 
+		margin-bottom: 0.43rem;
+	}
+	.list1 h3{
+		background-color: #f5f5f5;
+		width: 1.05rem;
+		font-size: 0.24rem;
+		height: 0.84rem;
+		text-align: center;
+		line-height: 0.84rem;
+		font-family: 微软雅黑;
+		color: #010101;
+		float: left;
+	}
+	.list1 li{
+		width: 1.05rem;
+		font-size: 0.24rem;
+		height: 0.84rem;
+		text-align: center;
+		line-height: 0.84rem;
+		font-family: 微软雅黑;
+		color: #010101;
+		float: left;
+	}
+	.list span{
+		color: #1c5080;
+	}
+	.middle span{
+		color: #1c5080;
+	}
+	.list1 span{
+		color: #1c5080;
+	}
+	.jiage{
+		background-color: #f5f5f5;
+		width: 6.68rem;
+		height: 0.84rem;
+		border:0.01rem solid #f5f5f5; 
+		margin-bottom: 0.43rem;
+	}
+	.jiage h3{
+		width: 1.05rem;
+		font-size: 0.24rem;
+		height: 0.84rem;
+		text-align: center;
+		line-height: 0.84rem;
+		font-family: 微软雅黑;
+		color: #010101;
+		float: left;
+	}
+	.jiage p{
+		font-size: 0.24rem;
+		height: 0.84rem;
+		text-align: center;
+		line-height: 0.84rem;
+		font-family: 微软雅黑;
+		color: #010101;
+		float: left;
+		margin-left: 2.7rem;
+	}
+	 .span{
+		color: #747474;
+		font-size: 0.24rem;
+		height: 0.84rem;
+		text-align: center;
+		line-height: 0.84rem;
+		font-family: 微软雅黑;
+		float: right;
+		margin-right: 0.02rem;
+	}
+	.jiage span{
+		color: #e8420a;
+	}
+	.container1{
+		height: 10.4rem;
+	}
+	.div1{
+		height: 2.28rem;
+		border-bottom: 0.01rem solid #f5f5f5;
+		margin-bottom: 0.45rem;
+	}
+	.tu1{
+		width: 2rem;
+		height: 1.83rem;
+		margin-left: 0.2rem;
+		float: left;
+	}
+	.img1{
+		width: 2rem;
+		height: 1.83rem;
+	}
+	.duan1{
+		height: 1.83rem;
+		width: 4.24rem;
+		margin-left: 0.23rem;
+		font-size: 0.22rem;
+		color: #666666;
+		float: left;
+	}
+	.duan1 .p1{
+		margin-bottom: 0.37rem;
+	}
+	.duan1 h3{
+		font-size: 0.28rem;
+		color: #000;
+	}
+	.duan1 span{
+		font-size: 0.36rem;
+		color: #e8420a;
+	}
+	.zongye{
+		margin-top: 0.78rem;
+		height: 2.54rem;
+	}
+	.ye1{
+		width: 0.6rem;
+		height: 0.6rem;
+		border: 0.01rem solid #f5f5f5;
+		font-size: 0.252rem;
+		text-align: center;
+		color: #000;
+		line-height: 0.6rem;
+		float: left;
+		margin-left: 0.64rem;
+	}
+	.ye{
+		width: 0.6rem;
+		height: 0.6rem;
+		border: 0.01rem solid #f5f5f5;
+		font-size: 0.252rem;
+		text-align: center;
+		color: #000;
+		line-height: 0.6rem;
+		float: left;
+	}
+	.ye2{
+		width: 0.6rem;
+		height: 0.6rem;
+		border: 0.01rem solid #f5f5f5;
+		font-size: 0.252rem;
+		text-align: center;
+		color: #fff;
+		background-color: #1c5080;
+		line-height: 0.6rem;
+		float: left;
+	}
+	.zuimoye{
+		width: 0.92rem;
+		height: 0.6rem;
+		border: 0.01rem solid #f5f5f5;
+		font-size: 0.252rem;
+		text-align: center;
+		color: #000;
+		line-height: 0.6rem;
+		float: left;
+	}
+	.footer{
+		background-color: #343235;
+		height: 5rem;
+		overflow: hidden;
+	}
+	.zixun{
+		width: 6.72rem;
+		height: 1.07rem;
+		border: 0.03rem solid #c2c2c3;
+		text-align: center;
+		font-size: 0.3rem;
+		color: #fff;
+		line-height: 1.07rem;
+		margin-left: 0.34rem;
+		margin-top:0.4rem;
+	}
+	.dizhi{
+		height: 1.04rem;
+		width: 6.72rem;
+		text-align: center;
+		font-size: 0.22rem;
+		line-height: 1.04rem;
+		color:#fff;
+		margin-left: 0.34rem
+	}
+	.ip{
+		height: 0.6rem;
+		width: 6.72rem;
+		text-align: center;
+		font-size: 0.22rem;
+		line-height: 0.6rem;
+		color:#fff;
+		margin-left: 0.34rem
+	}
+	.banquan{
+		height: 0.25rem;
+		width: 6.72rem;
+		text-align: center;
+		font-size: 0.22rem;
+		line-height: 0.25rem;
+		color:#fff;
+		margin-left: 0.34rem
+	}
+	.jishu{
+		height: 0.53rem;
+		width: 6.72rem;
+		text-align: center;
+		font-size: 0.22rem;
+		line-height: 0.53rem;
+		color:#fff;
+		margin-left: 0.34rem
+	}
+	.anniu{
+		height: 0.97rem;
+	}
+	.shouye{
+		width: 0.97rem;
+		height: 0.97rem;
+		font-size: 0.22rem;
+		color: #1c5080;
+		text-align: center;
+		margin-left: 0.4rem;
+		float: left;
+	}
+	.shouye img{
+		width: 0.6rem;
+		height: 0.6rem;
+	}
+	.redian{
+		width: 0.97rem;
+		height: 0.97rem;
+		font-size: 0.22rem;
+		color: #fff;
+		text-align: center;
+		margin-left: 0.4rem;
+		float: left;
+	}
+	.redian img{
+		width: 0.6rem;
+		height: 0.6rem;
+	}
+	</style>
+	<script src="rem.js"></script>
+</head>
+<body>
+	<div class="header">
+		<img class="tu10" src="images/图10.jpg">
+		<div class="dingzhi">
+			<p>快速定制</p>
+		</div>
+		<span class="menu"></span>
+	</div>
+	<div class="nav">
+		<div class="chujing">
+			<p>出境游</p>
+		</div>	
+	</div>
+	<div class="container">
+		<div class="list">
+			<h3>出发地</h3>
+			<ul>
+				<li>全部</li>
+				<li>上海</li>
+				<li>无锡</li>
+				<li>南京</li>
+			</ul>
+			<div class="span">更多&nbsp;&nbsp;∨</div>
+		</div>
+		<div class="list">
+			<h3>目的地</h3>
+			<ul>
+				<li>全部</li>
+				<li ><span>亚洲</span></li>
+				<li>欧洲</li>
+				<li>北美洲</li>
+			</ul>
+			<div class="span">更多&nbsp;&nbsp;∨</div>
+		</div>
+		<div class="middle">
+			<ul>
+				<li>西班牙</li>
+				<li>意大利</li>
+				<li>希腊</li>
+				<li>法国</li>
+				<li>比利时</li>
+				<li>荷兰</li>
+				<li>英国</li>
+				<li>瑞士</li>
+				<li>奥地利</li>
+				<li><span>德国</span></li>
+				<li>匈牙利</li>
+				<li>俄罗斯</li>
+				<li>捷克</li>
+				<li>乌克兰</li>
+				<li>芬兰</li>
+				<li>葡萄牙</li>
+				<li>冰岛</li>
+			</ul>
+		</div>
+		<div class="list">
+			<h3>出行时间</h3>
+			<ul>
+				<li><span>全部</span></li>
+				<li>1月</li>
+				<li>2月</li>
+				<li>3月</li>
+			</ul>
+			<div class="span">更多&nbsp;&nbsp;∨</div>
+		</div>
+		<div class="list">
+			<h3>出行天数</h3>
+			<ul>
+				<li><span>全部</span></li>
+				<li>3-5天</li>
+				<li>6-8天</li>
+				<li>9-11天</li>
+			</ul>
+			<div class="span">更多&nbsp;&nbsp;∨</div>
+		</div>
+		<div class="list">
+			<h3>游学主题</h3>
+			<ul>
+				<li ><span>全部</span></li>
+				<li>海岛度假</li>
+				<li>历史文化</li>
+			</ul>
+			<div class="span">更多&nbsp;&nbsp;∨</div>
+		</div>
+		<div class="list1">
+			<h3>价格区间</h3>
+			<ul>
+				<li><span>全部</span></li>
+				<li>5000元</li>
+				<li>5001-10000</li>
+			</ul>
+			<div class="span">更多&nbsp;&nbsp;∨</div>
+		</div>
+		<div class="jiage">
+			<h3>价格∨</h3>
+			<p>共<span>4</span>条出境游信息&nbsp;&nbsp;&nbsp;<span>4</span>/1</p>
+		</div>
+		<div class="container1">
+			<div class="div1">
+				<div class="tu1">
+					<img class="img1"  src="images/图01.jpg">
+				</div>
+				<div class="duan1">
+					<h3>LH德法瑞意+金色列车+少女峰...</h3>
+					<p>夏令营是TA感受社会人生的一条小小路径,</p>
+					<p class="p1">无论什么样的体验...</p>
+					<span>￥8350</span>/人起
+				</div>
+			</div>
+			<div class="div1">
+				<div class="tu1">
+					<img class="img1" src="images/图02.jpg">
+				</div>
+				<div class="duan1">
+					<h3>LH德法瑞意+金色列车+少女峰...</h3>
+					<p>夏令营是TA感受社会人生的一条小小路径,</p>
+					<p class="p1">无论什么样的体验...</p>
+					<span>￥8350</span>/人起
+				</div>
+			</div>
+			<div class="div1">
+				<div class="tu1">
+					<img class="img1"  src="images/图03.jpg">
+				</div>
+				<div class="duan1">
+					<h3>LH德法瑞意+金色列车+少女峰...</h3>
+					<p>夏令营是TA感受社会人生的一条小小路径,</p>
+					<p class="p1">无论什么样的体验...</p>
+					<span>￥8350</span>/人起
+				</div>
+			</div>
+			<div class="div1">
+				<div class="tu1">
+					<img class="img1"  src="images/图04.jpg">
+				</div>
+				<div class="duan1">
+					<h3>LH德法瑞意+金色列车+少女峰...</h3>
+					<p>夏令营是TA感受社会人生的一条小小路径,</p>
+					<p class="p1">无论什么样的体验...</p>
+					<span>￥8350</span>/人起
+				</div>
+			</div>
+		</div>
+		<div class="zongye">
+			<div class="ye1"><</div>
+			<div class="ye">1</div>
+			<div class="ye2">2</div>
+			<div class="ye">3</div>
+			<div class="ye">4</div>
+			<div class="ye">5</div>
+			<div class="ye">></div>
+			<div class="zuimoye">最末页</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="zixun">
+			<p>咨询热线:400-808-8682</p>
+		</div>
+		<div class="dizhi">
+			<p>地址:苏州市姑苏区三元二村16号兴元楼2楼东</p>
+		</div>
+		<div class="ip">
+			<p>苏ICP备14019690号、2014-2017</p>
+		</div>
+		<div class="banquan">
+			<p>@苏州英华国际旅游有限公司&nbsp;版权所有</p>
+		</div>
+		<div class="jishu">
+			<p>技术支持&nbsp;&nbsp;杭州联橙科技</p>
+		</div>
+		<div class="anniu">
+			<div class="shouye">
+				<img src="footerImg/footer01.png">
+				<p>首页</p>
+			</div>
+			<div class="redian">
+				<img src="footerImg/footer2.png">
+				<p>热点</p>
+			</div>
+			<div class="redian">
+				<img src="footerImg/footer3.png">
+				<p>院线</p>
+			</div>
+			<div class="redian">
+				<img src="footerImg/footer2_03.png">
+				<p>热图</p>
+			</div>
+			<div class="redian">
+				<img src="footerImg/footer5.png">
+				<p>我的</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
