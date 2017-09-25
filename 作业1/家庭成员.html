@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<title>家庭会员主页</title>
+	<style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	header{
+		height: 1.45rem;
+		background-color: #3c3c3c;
+		font-size: 0.6rem;
+		line-height: 1.45rem;
+	}
+	.close{
+		color: #fff;
+		font-size: 0.6rem;
+		margin:0 0.92rem 0 0.4rem;
+	}
+	.menu{
+		width: 0.7rem;
+		height: 0.6rem;
+		display: inline-block;
+		background:url(img/menu.png) no-repeat;
+		background-size: 100% 100%;
+		float: right;
+		margin: 0.42rem 0.7rem 0 0;
+	}
+	.main{
+		height: 17rem;
+		background: linear-gradient(#b04c92,#5c6193);
+		font-size: 0.4rem;
+
+	}
+	.password{
+		width: 2.5rem;
+		height: 1.02rem;
+		background-color: #f36da0;
+		position: fixed;
+		top: 1.7rem;
+		right: 0;
+		text-indent: 0.6rem;/*首行缩进*/
+		border-radius: 0.51rem 0 0 0.51rem;
+		font-size: 0.4rem;
+		line-height: 1.0rem;
+		color: #fff;
+	}
+	.item{
+		color: #ffffff;
+		border-radius: 0.2rem;/*添加圆角*/
+		margin-left: 0.4rem;
+		margin-top: 0.4rem;
+		width: 4.8rem;
+		height: 5.13rem;
+		background:rgba(255,255,255,0.26);
+		float: left;
+		text-align: center;
+	}
+	.middle{
+		background:rgba(255,255,255,0.26);
+		width: 10.00rem;
+		height: 4.35rem;
+		float: left;
+		text-align: center;
+	}
+	.clearfix:before,.clearfix:after{
+		content: '';
+		display: block;
+		height: 0;
+		visibility: hidden;
+		clear: both;
+	}
+	.img1{
+		margin-top: 0.25rem;
+		height: 2.84rem;
+		width: 2.84rem;
+	}
+	.img2{
+		height:0.92rem;
+		width:0.92rem;
+		margin-bottom: 0.25rem;
+	}
+	.img3{
+		height: 3.4rem;
+		width:  3.4rem;
+		text-align: right;
+	}
+	.img4{
+		
+		height:0.92rem;
+		width:0.92rem;
+	}
+	.footer{
+		height: 1.04rem;
+		font-size: 0.4rem;
+		background-color: #000;
+		color: #fff;
+	}
+	.p1{
+		margin-bottom: 0.2rem;
+	}
+	.item1{
+		width: 5.4rem;
+		float: left;
+	}
+	.item2{
+		width: 4.6rem;
+		float: left;
+		text-align: center;
+	}
+	</style>
+	<script src="rem.js"></script>
+</head>
+<body>
+	<header>
+		<span class="close">X</span>
+		<span class="close">个人中心</span>
+		<span class="menu"></span>
+	</header>
+	<div class="main">
+		<div class="item">
+			<img class="img1" src="img/VIPimage01.png">
+			<p class="p1">健康体检预约</p>
+			<img class="img2" src="img/appointment_icon.png">
+		</div>
+		<div class="item">
+			<img class="img1" src="img/VIPimage02.png">
+			<p class="p1">专家诊疗预约</p>
+			<img class="img2" src="img/appointment_icon.png">
+		</div>
+		<div class="item middle">
+			<div class="item1">
+				<img class="img3" src="img/VIPimage03.png">
+			</div>
+			<div class="item2">	
+				<p class="p2">华西绿通预约</p>
+				<img class="img4" src="img/appointment_ icon_on.png">
+			</div>	
+		</div>
+		<div class="item">
+			<img class="img1" src="img/VIPimage04.png">
+			<p class="p1">住院关怀预约</p>
+			<img class="img2" src="img/appointment_icon.png">
+		</div>
+		<div class="item">
+			<img class="img1" src="img/VIPimage05.png">
+			<p class="p1">消费明细查询</p>
+			<img class="img2" src="img/search_icon.png">			
+		</div>
+		
+	</div>
+	<div class="password">
+		修改密码
+	</div>
+	<div class="footer">
+		<ul>
+			<li><p>标签</p></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</body>
+</html>
