@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+    <script src="js/jquery-2.2.2.js"></script>
+	<title>QQ注册</title>
+</head>
+<style>
+	#big2{
+		width: 1346px;
+		height: 630px;
+	}
+	#celan2{
+		width: 640px;
+		height: 636px;
+
+		float: left;
+
+	}
+	#content2{
+		width: 702px;
+		height: 646px;
+		float: left;
+
+	}
+	#bread{
+		width: 704px;
+		height: 87px;
+
+		text-align: center;
+	}
+	#bread li #a1{
+		text-decoration: none;
+		color: #666666;
+		margin-left: 177px;
+	}
+	#bread li a{
+		text-decoration: none;
+		color: #666666;
+		margin-left: 40px;
+	}
+	#bread li {
+		list-style: none;
+		display: block;
+		float: left;
+	}
+	#huanying{
+		width: 600px;
+		height: 118px;
+	}
+	#QQ{
+		width: 261px;
+		height: 118px;
+
+		float: left;
+	}
+	#QQ p{
+		margin-top: 0px;
+	}
+	#lianghao{
+		width: 105px;
+		height: 115px;
+		float: left;
+		margin-left: 140px;
+	}
+	#zhuce{
+		height: 530px;
+		width: 503px;
+
+	}
+</style>
+<body>
+<script type="text/javascript">
+$(document).ready(function()
+{
+	$("#hide").click(function()
+	{
+		$("#img1").slideUp("normal");
+	})
+	$("#show").click(function()
+	{
+		$("#img2").slideDown("normal");
+	})
+});
+</script>
+	<div id="big2">
+		<div id="celan2">
+			<img id="img1" src="images/QQ.png" style="display:block; float:left;">
+		</div>
+		<div id="content2">
+			<div id="bread">
+				<ul>
+					<li><a href="" id="a1">免费靓号</a></li>
+					<li><a href="">邮箱账号</a></li>
+					<li><a href="">简体中文</a></li>
+					<li><a href="">意见反馈</a></li>
+				</ul>
+			</div>
+			<div id="huanying">
+				<div id="QQ">
+					<p style="display:block; font-size:45px;color:#000000;">欢迎注册QQ</br>
+					<span style="display:block;font-size:25px;color:#000000;">每一天，乐在沟通。</span></p>
+				</div>
+				<div id="lianghao">
+					<p><a style="color:#359eff; font-size:23px; text-decoration:none;" href="#">免费靓号</a></p>
+				</div>	
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("input[id=user]").blur(function(){
+			$("div[id=e0] span").remove();
+			if($("input[id=user]").val().length==0)
+			{
+				var ab=$("<span style='color:red;'>用户名不能为空</span>");
+				$("div[id=e0]").append(ab);
+			}
+		})
+		$("input[id=user]").focus(function(){
+			$("div[id=e0] span").remove();
+			$("div[id=e1] span").remove();
+			$("div[id=e2] span").remove();
+			$("div[id=e3] span").remove();
+		})
+		$("input[id=pswd]").blur(function(){
+			$("div[id=e0] span").remove();
+			if($("input[id=pswd]").val().length==0)
+			{
+				var cd=$("<span style='color:red;'>密码不能为空</span>");
+				$("div[id=e1]").append(cd);
+			}
+		})
+		$("input[id=pswd]").focus(function(){
+			$("div[id=e0] span").remove();
+			$("div[id=e1] span").remove();
+			$("div[id=e2] span").remove();
+			$("div[id=e3] span").remove();
+		})
+		$("input[id=quhao]").blur(function(){
+			$("div[id=e0] span").remove();
+			$("div[id=e1] span").remove();
+			$("div[id=e3] span").remove();
+			if($("input[id=quhao]").val().length==0)
+			{
+				var ef=$("<span style='color:red;'>区号不能为空</span>");
+				$("div[id=e3]").append(ef);
+			}
+		})
+		$("input[id=quhao]").focus(function(){
+			$("div[id=e0] span").remove();
+			$("div[id=e1] span").remove();
+			$("div[id=e2] span").remove();
+			$("div[id=e3] span").remove();
+		})
+		$("input[id=shouji]").blur(function(){
+			$("div[id=e0] span").remove();
+			$("div[id=e1] span").remove();
+			$("div[id=e2] span").remove();
+			
+			if($("input[id=shouji]").val().length==0)
+			{
+				var ef=$("<span style='color:red;'>手机号不能为空</span>");
+				$("div[id=e3]").append(ef);
+			}
+			else if($(this).val().length!=11)
+            {
+                var error2=$("<span style='color:red;'>请输入正确的手机号</span>");
+                $("div[id=e3]").append(error2);
+            }
+		})
+		$("input[id=shouji]").focus(function(){
+			$("div[id=e0] span").remove();
+			$("div[id=e1] span").remove();
+			$("div[id=e2] span").remove();
+			$("div[id=e3] span").remove();
+		})
+	})
+</script>																				
+				<div id="zhuce">
+					<div id="e0"><input id="user" type="text" placeholder="昵称" style="display:block; width:480px;height:50px;font-size:20px; margin-top:50px;"></div>
+					 <div id="e1"><input onKeyUp="pwStrength(this.value)" onBlur="pwStrength(this.value)" type="text" placeholder="密码"style="display:block;width:480px;height:50px;font-size:20px;margin-top:50px;" id="pswd"></div>
+ <br>密码强度:
+ <table width="217" border="1" cellspacing="0" cellpadding="1" bordercolor="#cccccc" height="20">
+ <tr align="center" bgcolor="#eeeeee">
+ <td width="33%" id="strength_L">弱</td>
+ <td width="33%" id="strength_M">中</td>
+ <td width="33%" id="strength_H">强</td>
+ </tr>
+ </table>
+					<div id="e2"><input id="quhao" type="text" placeholder="+86"style="display:block;float:left;width:160px;height:50px;font-size:20px;margin-top:50px;">
+					</div>
+					<div id="e3"><input id="shouji" type="text" placeholder="手机号码"style="display:block;float:left;width:300px;height:50px;font-size:20px;margin-left:20px;margin-top:50px;" name="sj"></div></br>
+					</br><p style="color:#999999; font-size:15px;">可通过该手机号码找回</p>
+					<a id="jump" href="#" rel="external"style="text-decoration:none;";>
+					<input type="submit" value="立即注册" style="width:478px; height:51px;font-size:30px;"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script type="text/javascript">
+	$("#jump").click(function(){
+		$("div[id=e0] span").remove();
+		$("div[id=e1] span").remove();
+		$("div[id=e2] span").remove();
+		$("div[id=e3] span").remove();
+		if($("input[id=user]").val().length!=0 && $("input[id=pswd]").val().length!=0
+			&& $("input[id=quhao]").val().length!=0 && $("input[id=shouji]").val().length!=0){
+			$("#jump").attr("href","登陆.html");
+		}
+		else{
+			alert("请输入注册信息");
+			$("#jump").attr("href","#");
+		}
+	})
+</script>	
+</body>
+</html>
+<script language="javascript">
+//CharMode函数
+//测试某个字符是属于哪一类.
+function CharMode(iN){
+ if (iN>=48 && iN <=57) //数字
+ return 1;
+ if (iN>=65 && iN <=90) //大写字母
+ return 2;
+ if (iN>=97 && iN <=122) //小写
+ return 4;
+ else
+ return 8; //特殊字符
+}
+//bitTotal函数
+//计算出当前密码当中一共有多少种模式
+function bitTotal(num){
+ modes=0;
+ for (i=0;i<4;i++){
+ if (num & 1) modes++;
+ num /= 2;
+ }
+ return modes;
+}
+//checkStrong函数
+//返回密码的强度级别
+function checkStrong(sPW){
+ if (sPW.length<=4)
+ return 0; //密码太短
+ Modes=0;
+ for (i=0;i<sPW.length;i++){
+ //测试每一个字符的类别并统计一共有多少种模式.
+ Modes|=CharMode(sPW.charCodeAt(i));
+ }
+ return bitTotal(Modes);
+}
+//pwStrength函数
+//当用户放开键盘或密码输入框失去焦点时，根据不同的级别显示不同的颜色
+function pwStrength(pwd){
+ O_color="#eeeeee";
+ L_color="#FF0000";
+ M_color="#FF9900";
+ H_color="#33CC00";
+ if (pwd==null||pwd==''){
+ Lcolor=Mcolor=Hcolor=O_color;
+ }else{
+ S_level=checkStrong(pwd);
+ switch(S_level) {
+ case 0:
+ Lcolor=Mcolor=Hcolor=O_color;
+ case 1:
+ Lcolor=L_color;
+ Mcolor=Hcolor=O_color;
+ break;
+ case 2:
+ Lcolor=Mcolor=M_color;
+ Hcolor=O_color;
+ break;
+ default:
+ Lcolor=Mcolor=Hcolor=H_color;
+ }
+ } 
+ document.getElementById("strength_L").style.background=Lcolor;
+ document.getElementById("strength_M").style.background=Mcolor;
+ document.getElementById("strength_H").style.background=Hcolor;
+}
+</script>

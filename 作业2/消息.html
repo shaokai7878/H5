@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <script src="js/jquery-2.2.2.js"></script>
+	<title>QQ消息</title>
+</head>
+<style>
+	#big{
+		width: 757px;
+		height: 552px;
+		margin: 0 auto;
+		border-left: 3px outset #ebebec;
+		border-bottom: 3px inset #ebebec;
+		border-right: 3px inset #ebebec;
+	}
+	#nav{
+		width: 755px;
+		height: 55px;
+		background-color: #1a92ed;
+	}
+	#celan{
+		width: 183px;
+		height: 480px;
+		float: left;
+	}
+	#content{
+		width: 565px;
+		height: 480px;
+		float: left;
+	}
+	#search{
+		float: left;
+		margin-left: 30px;
+		margin-top:13px; 
+	}
+	#one{
+		height: 66px;
+		width: 175px;
+	}
+	#celan :hover{
+		background-color: #f9f9f9;
+	}
+	#er{
+		float: left;
+		width: 123px;
+		height: 60px;
+		margin-left: 4px;
+	}
+	#lianxiren{
+		width: 574px;
+		height: 41px;
+		border-bottom: 3px inset #ebebec;
+	}
+	#lianxiren p{
+		font-size: 28px;
+		display: block;
+		margin-top: 0px;
+	}
+	#liaotian{
+		width: 574px;
+		height: 315px;
+		border-bottom: 3px inset #ebebec;
+		border-left: 3px outset #ebebec;
+	}
+	#neirong{
+		width: 574px;
+		height: 120px;
+		border-left: 3px outset #ebebec;
+	}
+	#content{
+		display: none;
+	}
+	.selected{
+		background-color: #f9f9f9;
+	}
+</style>
+<script>
+$(function(){
+	$("#celan #one #er #timu").click(function(){
+		
+		$("#content").show();
+	})
+})	
+</script>
+<body>
+<div data-role="page" id="big">
+	<div id="nav">
+		<img  style="display:block; float:left; margin-left:10px; margin-top:5px;" src="images/touxiang.png">
+		<div id="search">
+			<input type="text" name="search" placeholder="请输入关键字">
+		</div>
+		<img style="display:block; float:left; margin-left:200px;margin-top:13px; " src="images/消息.png">
+		<img style="display:block; float:left; margin-left:35px;margin-top:13px; " src="images/联系人.png">
+		<img style="display:block; float:left; margin-left:35px;margin-top:13px; " src="images/记录.png">
+	</div>
+	<div id="celan">
+		<div id="one">
+			<img src="images/iphone.png" style="display:block; float:left; padding-top:18px;">
+			<div id="er">
+				<p id="timu">我的iPhone</br>
+				<span style="color:#7693aa; font-size:13px;">您已在手机登陆QQ</span></p>
+			</div>
+		</div>
+		<div id="one">
+			<img src="images/群聊.png" style="display:block; float:left;padding-top:18px;">
+			<div id="er">
+				<p id="timu">不常用群聊</br>
+				<span style="color:#f36a3f; font-size:13px;">[9个群聊有新消息]</span></p>
+			</div>
+		</div>	
+		<div id="one">
+			<img src="images/user1.png" style="display:block; float:left; padding-top:18px;">
+			<div id="er">
+				<p id="timu">user1</br>
+				<span style="color:#7693aa; font-size:13px;">嗯</span></p>
+			</div>
+		</div>		
+		<div id="one">
+			<img src="images/user2.png" style="display:block; float:left;padding-top:18px;">
+			<div id="er">
+				<p id="timu">user2</br>
+				<span style="color:#7693aa; font-size:13px;">[图片]</span></p>
+			</div>
+		</div>	
+		<div id="one">
+			<img src="images/user3.png" style="display:block; float:left;padding-top:18px;">
+			<div id="er">
+				<p id="timu">user3</br>
+				<span style="color:#7693aa; font-size:13px;">[符号表情]</span></p>
+			</div>
+		</div>	
+		<div id="one">
+			<img src="images/user4.png" style="display:block; float:left;padding-top:18px;">
+			<div id="er">
+				<p id="timu">user4</br>
+				<span style="color:#7693aa; font-size:13px;">...</span></p>
+			</div>
+		</div>		
+		<div id="one">
+			<img src="images/user5.png" style="display:block; float:left;padding-top:18px;">
+			<div id="er">
+				<p id="timu">user5</br>
+				<span style="color:#7693aa; font-size:13px;">嗯</span></p>
+			</div>
+		</div>	
+	</div>
+	<div id="content">
+		<div id="lianxiren">
+			<p>user</p>
+		</div>
+		<div id="liaotian">
+			
+		</div>
+		<div id="neirong">
+		<input type="text">
+			<button style="margin-left:510px;margin-top:90px;">发送 </button>
+		</div>
+	</div>
+</div>	
+</body>
+</html>
